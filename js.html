@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    
+    </head>
+<body>
+    <form name="MyForm" onsubmit ="return myFun()">
+    mobile number:
+    <input type="text" id="mobilenumber"> 
+ 
+ 
+          
+       
+        
+        <input type="submit" value="submit">
+         <span id="message"></span>
+    </form>
+    
+    
+    </body>
+    <script>
+    function myFun(){
+        
+    	var a = document.getElementById("mobilenumber").value;   
+	if(a == "") {  
+		document.getElementById("message").innerHTML ="Please Enter Mobile Number";
+		return false;
+	}
+        
+           if (a.length<10){
+        document.getElementById("message").innerHTMl="please enter atleast 10 characters";
+               return false;
+        }
+        
+           if (a.length>10){
+        document.getElementById("message").innerHTMl="please enter ten digit mobile number only";
+               return false;
+        }
+   
+        
+        
+    }
+    </script>
+</html>

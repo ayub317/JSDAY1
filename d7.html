@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    
+    </head>
+
+    <body>
+    <form name="myform" onsubmit="return MyFun()">
+
+        yes<input type="radio">
+        no<input type="radio">
+        if yes,Explain:<input type="text" id="ifyes"><br>
+         what we can accomodate you?<input type="text" id="ifyes"><br>
+        other<input type="text"><br>
+           yes<input type="radio">
+        no<input type="radio"><br>
+        other:<input id="two" type="text">
+        
+      <span id="Message"> </span>  
+       
+      
+        </form>
+    
+    
+    </body>
+    
+    <script>
+function MyFun() {
+		if (document.getElementById("yescheck").checked){
+		    document.getElementById('ifYes').style.visibility = 'visible';
+}
+        else document.getElementById('ifyes').style.visibility='hidden';
+   
+    
+}
+    </script>
+    
+    
+    
+</html>

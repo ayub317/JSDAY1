@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    </head>
+
+    <body>
+        <form name="myform">
+            <input type="text" id="Num1"><br>
+             <input type="text" id="Num2"><br> 
+            <input type="button" onclick="MulFun()" value="multiply">               
+            <input type="button" onclick="DivFun()" value="divide">
+            <span id="Message"></span>
+        </form>
+    </body>
+    
+    <script>
+    function MulFun(){
+    var a=document.getElementById("Num1").value;   
+    var b=document.getElementById("Num2").value; 
+        var add=Number(a)*Number(b);
+    document.getElementById("Message").innerHTML=Number(a)*Number(b);
+}
+    </script> 
+    
+    
+        <script>
+    function DivFun(){
+    var a=document.getElementById("Num1").value;   
+    var b=document.getElementById("Num2").value;
+        var div=Number(a)/Number(b);
+    document.getElementById("Message").innerHTML= Number(a)/Number(b);
+}
+    </script> 
+</html>

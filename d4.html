@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    </head>
+
+    <body>
+        <form name="myform" >
+            <input type="text" id="Num1">                
+            <input type="button" onclick="MyFun()" value="check answer">
+            <span id="Message"></span>
+        </form>
+    </body>
+    
+    <script>
+    function MyFun(){
+    var a=document.getElementById("Num1").value;   
+	
+    document.getElementById("Message").innerHTML= a*a;
+}
+    </script> 
+</html>

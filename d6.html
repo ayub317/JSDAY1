@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    </head>
+
+    <body>
+        <form name="myform" onclick="MyFun()">
+            <p>Enter Area:</p>
+            <input type="text" id="Num1">                
+            <input type="button" value="calculate"><br>
+               <p>Answer:</p>
+            <input type="text" id="Num2">
+            <span id="Message"></span>
+        </form>
+    </body>
+    
+    <script>
+    function MyFun(){
+        
+         var a=document.getElementById("Num1").value;   
+	       var sqr=Number(a*a);
+    document.getElementById("Num2").value=sqr;       
+        
+}
+    </script> 
+</html>
